@@ -213,6 +213,9 @@ nav .logo h1 {
   nav .logo {
     gap: 0.3em;
   }
+  .hero {
+    height: 60vh;
+  }
   .hero #countDown .clock h2 {
     font-size: 7rem;
   }
@@ -250,9 +253,6 @@ nav .logo h1 {
   }
 }
 @media only screen and (max-width: 380px) {
-  .hero {
-    height: 60vh;
-  }
   .hero #countDown {
     justify-content: center;
     align-items: center;
