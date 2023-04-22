@@ -61,13 +61,11 @@ nav .logo h1 {
 
 .hero {
   width: 100%;
-  height: calc(100vh - 17em);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0;
-  margin: 3em 0;
+  margin: 7em 0;
 }
 .hero h1 {
   color: #ed4135;

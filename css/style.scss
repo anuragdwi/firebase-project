@@ -56,13 +56,13 @@ nav {
 }
 .hero {
   width: 100%;
-  height: calc(100vh - 17em);
+  // height: calc(100vh - 17em);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0;
-  margin: 3em 0;
+
+  margin: 7em 0;
   h1 {
     color: #ed4135;
     text-transform: uppercase;
