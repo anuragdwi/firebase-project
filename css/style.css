@@ -1,0 +1,242 @@
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  max-width: 100%;
+  margin: 1em auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
+  padding: 0.5em 0;
+}
+nav .logo {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+nav .logo svg {
+  width: 3.4em;
+  height: 3.4em;
+}
+nav .logo h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.show {
+  opacity: 1;
+}
+
+.success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(4deg, 84%, 57%);
+  width: 90%;
+  background: rgb(255, 164, 164);
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  opacity: 0;
+  z-index: 9099;
+  transition: opacity 0.4s ease-in-out;
+}
+.success h3 {
+  font-size: 1.5rem;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 10em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+}
+.hero #countDown {
+  pointer-events: none;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ed4135;
+}
+.hero #countDown h2 {
+  margin: 0;
+  font-size: 21rem;
+  line-height: 0.8;
+}
+.hero #countDown h4 {
+  font-size: 72px;
+  display: flex;
+  align-items: flex-end;
+}
+.hero .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+.hero .content .left-col {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  position: relative;
+  pointer-events: none;
+}
+.hero .content .left-col h1 {
+  padding: 0 1em;
+  color: #ed4135;
+  font-size: 4rem;
+  text-align: left;
+}
+.hero .content .right-col {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: left;
+}
+.hero .content .right-col h1 {
+  font-size: 1.2rem;
+}
+.hero .content .right-col .inp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .content .right-col .inp button {
+  background-color: #ed4135;
+  color: white;
+  border: none;
+  border-radius: 0px 24px 24px 0;
+  height: 36px;
+  padding: 0px 14px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+.hero .content .right-col .inp input {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 24px 0px 0px 24px;
+  border: 1px solid #828282;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 4em;
+}
+.footer .socialLinks {
+  display: flex;
+  list-style-type: none;
+  gap: 23px;
+  margin-bottom: 0.5em;
+}
+.footer .socialLinks i {
+  color: black;
+  font-size: 24px;
+}
+.footer .copy {
+  color: #828282;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero #countDown {
+    height: 40%;
+  }
+  .hero #countDown h2 {
+    font-size: 7rem;
+  }
+  .hero #countDown h4 {
+    font-size: 2rem;
+  }
+  .hero .content .left-col h1 {
+    font-size: 2rem;
+  }
+  .hero .content .right-col h4 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .hero #countDown {
+    height: 40%;
+  }
+  .hero #countDown h2 {
+    font-size: 15rem;
+  }
+  .hero #countDown h4 {
+    font-size: 3rem;
+  }
+  .hero .content .left-col h1 {
+    font-size: 3rem;
+  }
+  .hero .content .right-col h4 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav .logo {
+    gap: 0.3em;
+  }
+  .hero #countDown {
+    height: 40%;
+  }
+  .hero #countDown h2 {
+    font-size: 4rem;
+  }
+  .hero #countDown h4 {
+    font-size: 1rem;
+    -webkit-text-fill-color: #ed4135;
+    -webkit-text-stroke-width: 0px;
+    font-size: bold;
+  }
+  .hero .content {
+    flex-direction: column;
+  }
+  .hero .content .left-col {
+    width: 100%;
+  }
+  .hero .content .left-col h1 {
+    font-size: 2rem;
+  }
+  .hero .content .right-col {
+    width: 100%;
+  }
+  .hero .content .right-col h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .footer p {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

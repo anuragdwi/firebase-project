@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="show" class="success">
+      <h3>You have subscribed successfully!!</h3>
+    </div>
+    <div id="error" class="success">
+      <h3>please enter your mail address!!</h3>
+    </div>
+    <div class="wrapper">
+      <nav>
+        <div class="logo">
+          <svg
+            viewBox="0 0 33 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M32.7187 32.4099V0.590138H0.898937V32.4099H32.7187ZM25.8954 25.5866L25.8954 7.4135L7.7223 7.41351V25.5866L25.8954 25.5866Z"
+              fill="#ED4135"
+            />
+            <path
+              d="M21.6531 11.3438L21.6531 21.6295H11.3674L11.3674 11.3438H21.6531Z"
+              fill="#ED4135"
+            />
+          </svg>
+
+          <h1>CIRQT</h1>
+        </div>
+      </nav>
+      <section class="hero">
+        <div id="countDown">
+          <h2 id="day">00</h2>
+          <h4 class="dot">d</h4>
+          <h2 id="hour">00</h2>
+          <h4 class="dot">h</h4>
+          <h2 id="mins">00</h2>
+          <h4 class="dot">m</h4>
+        </div>
+        <div class="content">
+          <div class="left-col">
+            <h1>
+              We are <br />
+              Coming Soon.
+            </h1>
+          </div>
+          <div class="right-col">
+            <div class="email">
+              <h1 for="">Get notified when we launch</h1>
+              <div class="inp">
+                <input type="email" id="mail" placeholder="email" />
+                <button type="submit" onclick="subscribe();check()  ">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <ul class="socialLinks">
+          <li>
+            <a href=""> <i class="fab fab fab fab fa-linkedin"></i> </a>
+          </li>
+
+          <li>
+            <a href=""> <i class="fab fab fa-github"></i> </a>
+          </li>
+          <li>
+            <a href=""> <i class="fab fab fab fa-twitter"></i> </a>
+          </li>
+        </ul>
+        <p class="copy">© Copyrights Greelogix | All Rights Reserved</p>
+      </section>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
