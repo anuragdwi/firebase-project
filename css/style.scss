@@ -7,7 +7,7 @@
 body {
   font-size: 62.5%;
   max-width: 100%;
-  margin: 1em auto;
+  margin: 2em auto;
   height: 100vh;
   overflow: hidden;
 }
@@ -16,8 +16,8 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 4em;
-  padding: 0.5em 0;
+  height: 3em;
+  padding: 2em 0;
   .logo {
     display: flex;
     gap: 1em;
@@ -56,62 +56,65 @@ nav {
 }
 .hero {
   width: 100%;
-  height: calc(100vh - 10em);
+  height: calc(100vh - 17em);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0;
-  position: relative;
+  margin: 3em 0;
+  h1 {
+    color: #ed4135;
+    text-transform: uppercase;
+  }
   #countDown {
     pointer-events: none;
-    position: absolute;
     height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #ed4135;
-    h2 {
-      margin: 0;
-      font-size: 21rem;
-      line-height: 0.8;
-    }
-    h4 {
-      font-size: 72px;
+
+    .clock {
       display: flex;
       align-items: flex-end;
+      margin: 0 20px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #828282;
+      h2 {
+        margin: 0;
+        font-size: 18rem;
+        line-height: 0.8;
+      }
+    }
+    .dot {
+      font-size: 78px;
+      margin: 0;
     }
   }
   .content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     height: 70%;
     width: 100%;
-
     .left-col {
-      text-align: center;
       width: 50%;
       height: 100%;
-      display: flex;
-      align-content: center;
-      position: relative;
       pointer-events: none;
       h1 {
         padding: 0 1em;
         color: #ed4135;
-        font-size: 4rem;
+        font-size: 4.8rem;
         text-align: left;
+        margin-top: -40px;
+        width: 100%;
       }
     }
     .right-col {
       text-align: center;
       width: 50%;
-      height: 100%;
-
+      height: 80%;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -119,12 +122,13 @@ nav {
 
       text-align: left;
       h1 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
       }
       .inp {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
         button {
           background-color: #ed4135;
           color: white;
@@ -133,9 +137,9 @@ nav {
           height: 36px;
           padding: 0px 14px;
           cursor: pointer;
-          z-index: 9999999;
         }
         input {
+          width: 80%;
           height: 36px;
           padding: 0 20px;
           border-radius: 24px 0px 0px 24px;
@@ -169,17 +173,20 @@ nav {
   .hero {
     #countDown {
       height: 40%;
-      h2 {
-        font-size: 7rem;
+      .clock {
+        margin: 0 10px;
+        h2 {
+          font-size: 10rem;
+        }
       }
-      h4 {
-        font-size: 2rem;
+      .dot {
+        font-size: 50px;
       }
     }
     .content {
       .left-col {
         h1 {
-          font-size: 2rem;
+          font-size: 4 rem;
         }
       }
       .right-col {
@@ -215,7 +222,7 @@ nav {
     }
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   nav {
     .logo {
       gap: 0.3em;
@@ -223,15 +230,13 @@ nav {
   }
   .hero {
     #countDown {
-      height: 40%;
-      h2 {
-        font-size: 4rem;
+      .clock {
+        h2 {
+          font-size: 7rem;
+        }
       }
       h4 {
-        font-size: 1rem;
-        -webkit-text-fill-color: #ed4135;
-        -webkit-text-stroke-width: 0px;
-        font-size: bold;
+        font-size: 44px;
       }
     }
     .content {
@@ -239,7 +244,8 @@ nav {
       .left-col {
         width: 100%;
         h1 {
-          font-size: 2rem;
+          margin-top: 0;
+          font-size: 3rem;
         }
       }
       .right-col {
@@ -255,6 +261,63 @@ nav {
   .footer {
     p {
       font-size: 0.8rem;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .hero {
+    #countDown {
+      .clock {
+        h2 {
+          font-size: 4rem;
+        }
+      }
+    }
+    .content {
+      .left-col {
+        h1 {
+          font-size: 44px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .hero {
+    #countDown {
+      justify-content: center;
+      align-items: center;
+      .clock {
+        h2 {
+          font-size: 3rem;
+        }
+        .dot {
+          font-size: 20px;
+          -webkit-text-stroke: 0px;
+          -webkit-text-fill-color: #828282;
+        }
+      }
+    }
+    .content {
+      .left-col {
+        height: 50%;
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      .right-col {
+        align-items: center;
+        justify-content: center;
+
+        height: 50%;
+        h1 {
+          font-size: 1rem;
+        }
+        inp {
+          width: 80%;
+        }
+      }
     }
   }
 }

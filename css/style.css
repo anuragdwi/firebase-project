@@ -8,7 +8,7 @@
 body {
   font-size: 62.5%;
   max-width: 100%;
-  margin: 1em auto;
+  margin: 2em auto;
   height: 100vh;
   overflow: hidden;
 }
@@ -18,8 +18,8 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 4em;
-  padding: 0.5em 0;
+  height: 3em;
+  padding: 2em 0;
 }
 nav .logo {
   display: flex;
@@ -61,62 +61,66 @@ nav .logo h1 {
 
 .hero {
   width: 100%;
-  height: calc(100vh - 10em);
+  height: calc(100vh - 17em);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0;
-  position: relative;
+  margin: 3em 0;
+}
+.hero h1 {
+  color: #ed4135;
+  text-transform: uppercase;
 }
 .hero #countDown {
   pointer-events: none;
-  position: absolute;
   height: 50%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ed4135;
 }
-.hero #countDown h2 {
-  margin: 0;
-  font-size: 21rem;
-  line-height: 0.8;
-}
-.hero #countDown h4 {
-  font-size: 72px;
+.hero #countDown .clock {
   display: flex;
   align-items: flex-end;
+  margin: 0 20px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #828282;
+}
+.hero #countDown .clock h2 {
+  margin: 0;
+  font-size: 18rem;
+  line-height: 0.8;
+}
+.hero #countDown .dot {
+  font-size: 78px;
+  margin: 0;
 }
 .hero .content {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   height: 70%;
   width: 100%;
 }
 .hero .content .left-col {
-  text-align: center;
   width: 50%;
   height: 100%;
-  display: flex;
-  align-content: center;
-  position: relative;
   pointer-events: none;
 }
 .hero .content .left-col h1 {
   padding: 0 1em;
   color: #ed4135;
-  font-size: 4rem;
+  font-size: 4.8rem;
   text-align: left;
+  margin-top: -40px;
+  width: 100%;
 }
 .hero .content .right-col {
   text-align: center;
   width: 50%;
-  height: 100%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -124,12 +128,13 @@ nav .logo h1 {
   text-align: left;
 }
 .hero .content .right-col h1 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .hero .content .right-col .inp {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .hero .content .right-col .inp button {
   background-color: #ed4135;
@@ -139,9 +144,9 @@ nav .logo h1 {
   height: 36px;
   padding: 0px 14px;
   cursor: pointer;
-  z-index: 9999999;
 }
 .hero .content .right-col .inp input {
+  width: 80%;
   height: 36px;
   padding: 0 20px;
   border-radius: 24px 0px 0px 24px;
@@ -173,14 +178,17 @@ nav .logo h1 {
   .hero #countDown {
     height: 40%;
   }
-  .hero #countDown h2 {
-    font-size: 7rem;
+  .hero #countDown .clock {
+    margin: 0 10px;
   }
-  .hero #countDown h4 {
-    font-size: 2rem;
+  .hero #countDown .clock h2 {
+    font-size: 10rem;
+  }
+  .hero #countDown .dot {
+    font-size: 50px;
   }
   .hero .content .left-col h1 {
-    font-size: 2rem;
+    font-size: 4 rem;
   }
   .hero .content .right-col h4 {
     width: 100%;
@@ -203,21 +211,15 @@ nav .logo h1 {
     width: 100%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   nav .logo {
     gap: 0.3em;
   }
-  .hero #countDown {
-    height: 40%;
-  }
-  .hero #countDown h2 {
-    font-size: 4rem;
+  .hero #countDown .clock h2 {
+    font-size: 7rem;
   }
   .hero #countDown h4 {
-    font-size: 1rem;
-    -webkit-text-fill-color: #ed4135;
-    -webkit-text-stroke-width: 0px;
-    font-size: bold;
+    font-size: 44px;
   }
   .hero .content {
     flex-direction: column;
@@ -226,7 +228,8 @@ nav .logo h1 {
     width: 100%;
   }
   .hero .content .left-col h1 {
-    font-size: 2rem;
+    margin-top: 0;
+    font-size: 3rem;
   }
   .hero .content .right-col {
     width: 100%;
@@ -238,5 +241,45 @@ nav .logo h1 {
   }
   .footer p {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .hero #countDown .clock h2 {
+    font-size: 4rem;
+  }
+  .hero .content .left-col h1 {
+    font-size: 44px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .hero #countDown {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero #countDown .clock h2 {
+    font-size: 3rem;
+  }
+  .hero #countDown .clock .dot {
+    font-size: 20px;
+    -webkit-text-stroke: 0px;
+    -webkit-text-fill-color: #828282;
+  }
+  .hero .content .left-col {
+    height: 50%;
+  }
+  .hero .content .left-col h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero .content .right-col {
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+  }
+  .hero .content .right-col h1 {
+    font-size: 1rem;
+  }
+  .hero .content .right-col inp {
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
