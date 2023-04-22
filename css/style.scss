@@ -56,7 +56,6 @@ nav {
 }
 .hero {
   width: 100%;
-  // height: calc(100vh - 17em);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,8 +79,8 @@ nav {
       align-items: flex-end;
       margin: 0 20px;
       -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #828282;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #ed4135;
       h2 {
         margin: 0;
         font-size: 18rem;

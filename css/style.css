@@ -84,8 +84,8 @@ nav .logo h1 {
   align-items: flex-end;
   margin: 0 20px;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #828282;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ed4135;
 }
 .hero #countDown .clock h2 {
   margin: 0;
