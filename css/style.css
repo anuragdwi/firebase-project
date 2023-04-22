@@ -93,6 +93,9 @@ nav .logo h1 {
   line-height: 0.8;
 }
 .hero #countDown .dot {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ed4135;
   font-size: 78px;
   margin: 0;
 }
@@ -114,6 +117,7 @@ nav .logo h1 {
   text-align: left;
   margin-top: -40px;
   width: 100%;
+  font-weight: 600;
 }
 .hero .content .right-col {
   text-align: center;
@@ -219,8 +223,8 @@ nav .logo h1 {
   .hero #countDown .clock h2 {
     font-size: 7rem;
   }
-  .hero #countDown h4 {
-    font-size: 44px;
+  .hero #countDown .dot {
+    font-size: 34px;
   }
   .hero .content {
     flex-direction: column;
@@ -239,6 +243,7 @@ nav .logo h1 {
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
+    font-weight: 600;
   }
   .footer p {
     font-size: 0.8rem;
@@ -246,10 +251,12 @@ nav .logo h1 {
 }
 @media only screen and (max-width: 550px) {
   .hero #countDown .clock h2 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
   .hero .content .left-col h1 {
-    font-size: 44px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ed4135;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -261,9 +268,8 @@ nav .logo h1 {
     font-size: 3rem;
   }
   .hero #countDown .clock .dot {
-    font-size: 20px;
-    -webkit-text-stroke: 0px;
-    -webkit-text-fill-color: #828282;
+    font-size: 28px;
+    -webkit-text-stroke: 1px;
   }
   .hero .content .left-col {
     height: 50%;

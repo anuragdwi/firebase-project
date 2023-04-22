@@ -88,6 +88,9 @@ nav {
       }
     }
     .dot {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #ed4135;
       font-size: 78px;
       margin: 0;
     }
@@ -108,6 +111,7 @@ nav {
         text-align: left;
         margin-top: -40px;
         width: 100%;
+        font-weight: 600;
       }
     }
     .right-col {
@@ -235,8 +239,8 @@ nav {
           font-size: 7rem;
         }
       }
-      h4 {
-        font-size: 44px;
+      .dot {
+        font-size: 34px;
       }
     }
     .content {
@@ -254,6 +258,7 @@ nav {
           width: 100%;
           text-align: center;
           font-size: 1.2rem;
+          font-weight: 600;
         }
       }
     }
@@ -269,14 +274,16 @@ nav {
     #countDown {
       .clock {
         h2 {
-          font-size: 4rem;
+          font-size: 6rem;
         }
       }
     }
     .content {
       .left-col {
         h1 {
-          font-size: 44px;
+          font-size: 30px;
+          font-weight: 700;
+          color: #ed4135;
         }
       }
     }
@@ -292,9 +299,8 @@ nav {
           font-size: 3rem;
         }
         .dot {
-          font-size: 20px;
-          -webkit-text-stroke: 0px;
-          -webkit-text-fill-color: #828282;
+          font-size: 28px;
+          -webkit-text-stroke: 1px;
         }
       }
     }
