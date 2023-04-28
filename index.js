@@ -57,32 +57,3 @@ function subscribe() {
     }, 2000);
   }
 }
-// function check() {
-//   let email = document.getElementById("mail").value;
-//   let allUsers = [];
-
-//   fetch("https://subscribe-form-e87e2-default-rtdb.firebaseio.com/data.json")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       //   console.log(data); //Nested Object
-
-//       for (let x in data) {
-//         tempEmail = {
-//           ...data[x],
-//         };
-
-//         allUsers.push(tempEmail);
-//       }
-//       //   console.log(allUsers); //Array of object
-//       let testUser = allUsers.filter((x) => {
-//         return x.email == email;
-//       });
-//       console.log(testUser);
-
-//       if (testUser.length == 1) {
-//         alert("Login successfull");
-//       } else {
-//         alert("No such user exist!!!");
-//       }
-//     });
-// }

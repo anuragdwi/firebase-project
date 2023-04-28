@@ -17,10 +17,10 @@
   </head>
 
   <body>
-    <div id="show" class="success">
+    <div id="show" class="popup">
       <h3>You have subscribed successfully!!</h3>
     </div>
-    <div id="error" class="success">
+    <div id="error" class="popup">
       <h3>please enter your mail address!!</h3>
     </div>
     <div class="wrapper">
@@ -43,42 +43,37 @@
             />
           </svg>
 
-          <h1>CIRQT</h1>
+          <h1>Cirqt</h1>
         </div>
       </nav>
       <section class="hero">
-        <h1>rermaining time:</h1>
-        <div id="countDown">
-          <div class="clock">
-            <h2 id="day">00</h2>
-            <h4 class="dot">d</h4>
+        <div class="left-col">
+          <div id="countDown">
+            <div class="clock">
+              <h2 id="day">00</h2>
+              <h4 class="dot">d</h4>
+            </div>
+            <div class="clock">
+              <h2 id="hour">00</h2>
+              <h4 class="dot">h</h4>
+            </div>
+            <div class="clock">
+              <h2 id="mins">00</h2>
+              <h4 class="dot">m</h4>
+            </div>
           </div>
-          <div class="clock">
-            <h2 id="hour">00</h2>
-            <h4 class="dot">h</h4>
-          </div>
-          <div class="clock">
-            <h2 id="mins">00</h2>
-            <h4 class="dot">m</h4>
-          </div>
-        </div>
-        <div class="content">
-          <div class="left-col">
-            <h1>We are Coming Soon...</h1>
-          </div>
-          <div class="right-col">
-            <div class="email">
-              <h1 for="">Get notified when we launch</h1>
-              <div class="inp">
-                <input type="email" id="mail" placeholder="email" />
-                <button type="submit" onclick="subscribe();check()  ">
-                  Subscribe
-                </button>
-              </div>
+          <h1 class="title">All Good Things Come to Those who Wait...</h1>
+          <div class="email">
+            <p for="">Get notified when we launch</p>
+            <div class="inp">
+              <input type="email" id="mail" placeholder="email" />
+              <button type="submit" onclick="subscribe()  ">Subscribe</button>
             </div>
           </div>
         </div>
+        <div class="right-col"><img src="/img.png" alt="" /></div>
       </section>
+
       <section class="footer">
         <ul class="socialLinks">
           <li>
